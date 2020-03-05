@@ -5,9 +5,9 @@ from .models import UserInput
 
 
 def index(request):
-  user_input = UserInput.objects.all()[0].text
+  user_input = list(UserInput.objects.all())[-1].text
   output = chat()
   return HttpResponse(output + user_input)
 
 def chat():
-  return 'hello '
+  return 'Hello '
