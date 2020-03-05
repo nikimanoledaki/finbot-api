@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 django = "*"
 django-tastypie = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"
