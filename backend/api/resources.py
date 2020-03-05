@@ -1,5 +1,5 @@
 from tastypie.resources import ModelResource
-from api.models import UserInput, BotOutput
+from .models import UserInput, BotOutput
 from tastypie.authorization import Authorization
 
 class UserInputResource(ModelResource):
