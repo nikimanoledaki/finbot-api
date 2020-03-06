@@ -1,5 +1,5 @@
 from tastypie.resources import ModelResource
-from .models import UserInput, BotOutput
+from .models import UserInput
 from tastypie.authorization import Authorization
 
 class UserInputResource(ModelResource):
@@ -8,12 +8,4 @@ class UserInputResource(ModelResource):
     max_limit = 0
     queryset = UserInput.objects.all()
     resource_name = 'user_input'
-    authorization = Authorization()
-
-class BotOutputResource(ModelResource):
-  class Meta:
-    limit = 0
-    max_limit = 0
-    queryset = BotOutput.objects.all()
-    resource_name = 'bot_output'
     authorization = Authorization()
