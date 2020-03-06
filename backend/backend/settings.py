@@ -25,7 +25,7 @@ SECRET_KEY = 'uu!@7c_lakv#35t!9hk$v$a0fyth=j5^h2p+^r@0@sfpq^-&zj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['finbot--api.herokuapp.com']
+ALLOWED_HOSTS = ['finbot--api.herokuapp.com', 'localhost']
 
 
 # Application definition
