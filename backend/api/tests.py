@@ -17,5 +17,7 @@ class YourTestClass(TestCase):
     field_label = user_input._meta.get_field('text').verbose_name
     self.assertEquals(field_label, 'text')
 
-
-  
+  def test_object_returns_text(self):
+    user_input = UserInput.objects.get(id=1)
+    self.assertEquals(str(user_input), user_input.text)
+ 
