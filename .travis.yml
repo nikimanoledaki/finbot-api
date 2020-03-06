@@ -1,5 +1,5 @@
 language: python
 python:
 - '3.7.6'
-install: pip3 install --user -r requirements.txt
+install: pip3 install requirements.txt
 script: python manage.py test
