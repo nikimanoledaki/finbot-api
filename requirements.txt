@@ -98,13 +98,15 @@ scipy==1.4.1
 Send2Trash==1.5.0
 six==1.14.0
 sqlparse==0.3.1
+tb-nightly==1.14.0a20190603
 tensorboard==1.13.1
-tensorflow==1.13.2
+tensorflow==2.0.0b1
 tensorflow-estimator==1.13.0
 termcolor==1.1.0
 terminado==0.8.3
 testpath==0.4.4
 TextTest==3.29.4
+tf-estimator-nightly==1.14.0.dev2019060501
 tflearn==0.3.2
 tornado==6.0.3
 traitlets==4.3.3
