@@ -15,16 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from api.resources import UserInputResource, BotOutputResource
-
-
+from api.resources import UserInputResource
 
 user_input_resource = UserInputResource()
-bot_output_resource = BotOutputResource()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(user_input_resource.urls)),
-    url(r'^api/', include(bot_output_resource.urls)),
     url('api/', include('api.urls')),
 ]
