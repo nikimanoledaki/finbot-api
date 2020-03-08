@@ -92,6 +92,8 @@ def bag_of_wrds(s, words):
   return numpy.array(bag)
 
 def chat(user_input):
+
+  ERROR_THRESHOLD = 0.7
     
   results = model.predict([bag_of_wrds(user_input, words)])[0]
   results_index = numpy.argmax(results)
@@ -99,7 +101,7 @@ def chat(user_input):
 
   print(results[results_index])
 
-  if results[results_index] > 0.7:
+  if results[results_index] > ERROR_THRESHOLD:
     for tg in data['intents']:
       if tg['tag'] == tag:
         responses = tg['responses']
