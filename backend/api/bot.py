@@ -93,12 +93,17 @@ def bag_of_wrds(s, words):
 
 def chat(user_input):
     
-  results = model.predict([bag_of_wrds(user_input, words)])
+  results = model.predict([bag_of_wrds(user_input, words)])[0]
   results_index = numpy.argmax(results)
   tag = labels[results_index]
 
-  for tg in data['intents']:
-    if tg['tag'] == tag:
-      responses = tg['responses']
+  print(results[results_index])
 
-  return random.choice(responses)
+  if results[results_index] > 0.7:
+    for tg in data['intents']:
+      if tg['tag'] == tag:
+        responses = tg['responses']
+
+    return random.choice(responses)
+  else:
+    return "Sorry I don't undertand"
