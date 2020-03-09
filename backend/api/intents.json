@@ -21,8 +21,8 @@
    },
    {"tag": "ISAs",
     "patterns": ["ISA", "ISAs", "What is an ISA?"],
-    "responses": ["An individual savings account (ISA) is a class of retail investment arrangement available to residents of the United Kingdom."],
-    "context_set": ""
+    "responses": ["An individual savings account (ISA) is a class of retail investment arrangement available to residents of the United Kingdom. It allows you to save tax-free into a cash savings or investment account. Isa accounts are offered by banks, building societies, insurers, asset managers and National Savings and Investments (NS&I)."],
+    "context_set": 
    },
    {"tag": "diversification",
     "patterns": ["diversification", "What is diversification?"],
@@ -31,12 +31,32 @@
    },
    {"tag": "salary negotiation",
     "patterns": ["salary negotiation", "negotiation", "negotiate salary", "job offer negotiation", "What is salary negotiation", "How do I negotiate my salary", "How do I ask my employer for more money"],
-    "responses": [""],
+    "responses": ["Salary negotiations are discussions between yourself and a representative of your current or prospective company that aim to help you secure a higher salary."],
     "context_set": ""
    },
    {"tag": "student loans",
     "patterns": ["student loan", "student loans", "How do I pay off my student loans?", "student debt", "What is student debt"],
-    "responses": [""],
+    "responses": ["You start repaying your student loan once you earn over a certain amount. The size of your monthly repayments will depend on how much you earn, not what you owe.You’ll be charged interest on the loan from the day you take it out. The terms and conditions can change"],
+    "context_set": ""
+   },
+   {"tag": "fiduciary",
+    "patterns": ["fiduciary", "what is a fiduciary?", "fiduciary duties"],
+    "responses": ["A fiduciary is a person who holds a legal or ethical relationship of trust with one or more other parties. Typically, a fiduciary prudently takes care of money or other assets for another person"],
+    "context_set": ""
+   },
+   {"tag": "investing",
+    "patterns": ["investing", "investment", "allocating funds", "what is investing?", "what is investment"],
+    "responses": ["Investments are something you buy or put your money into to get a profitable return. Investing is a way to set aside money while you are busy with life and have that money work for you so that you can fully reap the rewards of your labor in the future"],
+    "context_set": ""
+   },
+   {"tag": "expenses",
+    "patterns": ["expenses", "expense", "what is an expense?", "what is expenses?"],
+    "responses": ["An expense is the cost of operations that a company incurs to generate revenue. As the popular saying goes, “it costs money to make money.” Common expenses include payments to suppliers, employee wages, factory leases, and equipment depreciation"],
+    "context_set": ""
+   },
+   {"tag": "income",
+    "patterns": ["income", "managing income", "what is income?"],
+    "responses": ["Income is money (or some equivalent value) that an individual or business receives in exchange for providing a good or service or through investing capital. For individuals, income is most often received in the form of wages or salary. Business income can refer to a company's remaining revenues after paying all expenses and taxes."],
     "context_set": ""
    },
    {"tag": "financial risk",
