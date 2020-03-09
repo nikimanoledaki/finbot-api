@@ -10,6 +10,7 @@ import tensorflow
 import random
 import json
 import pickle
+from .models import UserInput
 
 module_dir = os.path.dirname(__file__)
 file_path = os.path.join(module_dir, 'intents.json')
@@ -93,6 +94,8 @@ def bag_of_wrds(s, words):
   return numpy.array(bag)
 
 def chat(user_input):
+  FINANCE_INTENTS = ["savings", "budgeting"]
+  previous_user_input = list(UserInput.objects.all())[-2].text
 
   ERROR_THRESHOLD = 0.7
     
@@ -100,13 +103,22 @@ def chat(user_input):
   results_index = numpy.argmax(results)
   tag = labels[results_index]
 
-  print(results[results_index])
-
-  if results[results_index] > ERROR_THRESHOLD:
+  if user_input == 'yes':
+    results = model.predict([bag_of_wrds(previous_user_input, words)])[0]
+    results_index = numpy.argmax(results)
+    tag = labels[results_index]
     for tg in data['intents']:
       if tg['tag'] == tag:
         responses = tg['responses']
+    return responses[1]
 
-    return random.choice(responses)
+  elif results[results_index] > ERROR_THRESHOLD:
+    for tg in data['intents']:
+      if tg['tag'] == tag:
+        responses = tg['responses']
+        if tg['tag'] in FINANCE_INTENTS:
+          return responses[0]
+        else:
+          return random.choice(responses)
   else:
     return "Sorry I don't undertand"
