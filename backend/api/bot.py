@@ -10,12 +10,16 @@ import tensorflow
 import random
 import json
 import pickle
+from .models import UserInput
 
 module_dir = os.path.dirname(__file__)
 file_path = os.path.join(module_dir, 'intents.json')
 with open(file_path) as file:
   data = json.load(file)
 
+links_file_path = os.path.join(module_dir, 'intentsLinks.json')
+with open(links_file_path) as file:
+  linksData = json.load(file)
 
 words = []
 labels = []
@@ -93,6 +97,9 @@ def bag_of_wrds(s, words):
   return numpy.array(bag)
 
 def chat(user_input):
+  FINANCE_INTENTS = ["savings", "budgeting"]
+
+  previous_user_input = list(UserInput.objects.all())[-2].text
 
   ERROR_THRESHOLD = 0.7
     
@@ -100,13 +107,29 @@ def chat(user_input):
   results_index = numpy.argmax(results)
   tag = labels[results_index]
 
-  print(results[results_index])
 
   if results[results_index] > ERROR_THRESHOLD:
     for tg in data['intents']:
-      if tg['tag'] == tag:
+      if tg['tag'] == 'yes':
+        return showLinks(previous_user_input)
+      elif tg['tag'] == tag:
+        print('inside tag==tag')
+        print(tg['tag'])
         responses = tg['responses']
-
-    return random.choice(responses)
+        if tg['tag'] in FINANCE_INTENTS:
+          return responses[0]
+        else:
+          return random.choice(responses)
   else:
     return "Sorry I don't undertand"
+
+def showLinks(prior_user_inputs):
+  results = model.predict([bag_of_wrds(prior_user_inputs, words)])[0]
+  results_index = numpy.argmax(results)
+  tag = labels[results_index]
+
+  for tg in linksData['intents']:
+    if tg['tag'] == tag:
+      responses = tg['responses']
+      print(responses[0])
+    return responses[0]
