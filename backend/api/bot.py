@@ -131,3 +131,4 @@ def showLinks(prior_user_inputs):
       responses = tg['responses']
       print(responses[0])
     return responses[0]
+
