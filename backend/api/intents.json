@@ -22,7 +22,7 @@
    {"tag": "ISAs",
     "patterns": ["ISA", "ISAs", "What is an ISA?"],
     "responses": ["An individual savings account (ISA) is a class of retail investment arrangement available to residents of the United Kingdom. It allows you to save tax-free into a cash savings or investment account. Isa accounts are offered by banks, building societies, insurers, asset managers and National Savings and Investments (NS&I)."],
-    "context_set": 
+    "context_set": ""
    },
    {"tag": "diversification",
     "patterns": ["diversification", "What is diversification?"],
@@ -98,6 +98,7 @@
    "patterns": ["saving", "savings", "What should I save?", "How much should I save?"],
    "responses": ["Savings refer to money you put aside for future use rather than spending it immediately. In addition to the benefits of saving up for future purchases, delaying an impulse purchase also helps you decide whether it is something you really need, or a waste of money you will regret shortly after buying."],
    "context_set": ""
+   },
    {"tag": "yes",
     "patterns": ["yes", "yes please", "y", "sure", "ok"],
     "responses": [""],
