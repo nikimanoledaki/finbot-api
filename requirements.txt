@@ -6,11 +6,13 @@ astor==0.8.1
 astroid==2.3.3
 attrs==19.3.0
 backcall==0.1.0
+backports.weakref==1.0.post1
 bleach==3.1.1
 cachetools==4.0.0
 certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
+coverage==5.0.3
 decorator==4.4.1
 defusedxml==0.6.0
 distlib==0.3.0
@@ -21,6 +23,7 @@ django-heroku==0.3.1
 django-tastypie==0.14.3
 djangorestframework==3.11.0
 entrypoints==0.3
+enum34==1.1.9
 filelock==3.0.12
 Flask==1.1.1
 gast==0.2.2
@@ -100,13 +103,13 @@ six==1.14.0
 sqlparse==0.3.1
 tb-nightly==1.14.0a20190603
 tensorboard==1.13.1
-tensorflow==2.0.0b1
+tensorflow==1.13.1
 tensorflow-estimator==1.13.0
 termcolor==1.1.0
 terminado==0.8.3
 testpath==0.4.4
 TextTest==3.29.4
-tf-estimator-nightly==1.14.0.dev2019060501
+tf-estimator-nightly==1.13.0.dev2019012901
 tflearn==0.3.2
 tornado==6.0.3
 traitlets==4.3.3

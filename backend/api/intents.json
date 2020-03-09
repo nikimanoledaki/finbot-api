@@ -98,6 +98,10 @@
    "patterns": ["saving", "savings", "What should I save?", "How much should I save?"],
    "responses": ["Savings refer to money you put aside for future use rather than spending it immediately. In addition to the benefits of saving up for future purchases, delaying an impulse purchase also helps you decide whether it is something you really need, or a waste of money you will regret shortly after buying."],
    "context_set": ""
+   {"tag": "yes",
+    "patterns": ["yes", "yes please", "y", "sure", "ok"],
+    "responses": [""],
+    "context_set": ""
    }
   ]
 }
