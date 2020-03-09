@@ -109,7 +109,7 @@ termcolor==1.1.0
 terminado==0.8.3
 testpath==0.4.4
 TextTest==3.29.4
-tf-estimator-nightly==1.14.0.dev2019060501
+tf-estimator-nightly==1.13.0.dev2019012901
 tflearn==0.3.2
 tornado==6.0.3
 traitlets==4.3.3
