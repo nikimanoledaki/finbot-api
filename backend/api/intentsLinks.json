@@ -1,7 +1,10 @@
 {"intents": [
   {"tag": "savings",
     "patterns": ["saving", "savings", "What should I save?", "How much should I save?"],
-    "responses": ["www.google.com"],
+    "responses": [{
+      "Google": "http://www.google.com",
+      "Facebook": "http://www.facebook.com"
+    }],
     "context_set": ""
    },
    {"tag": "budgeting",

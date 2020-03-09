@@ -43,6 +43,11 @@
     "patterns": ["student loan", "student loans", "How do I pay off my student loans?", "student debt"],
     "responses": [""],
     "context_set": ""
+   },
+   {"tag": "yes",
+    "patterns": ["yes", "yes please", "y", "sure", "ok"],
+    "responses": [""],
+    "context_set": ""
    }
 ]
 }

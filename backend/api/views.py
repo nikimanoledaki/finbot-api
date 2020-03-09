@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from .models import UserInput
 from . import bot
 
@@ -9,4 +9,7 @@ def index(request):
   return HttpResponse(output)
 
 def predict(user_input):
-  return bot.chat(user_input)
+  if isinstance(bot.chat(user_input), str):
+    return bot.chat(user_input)
+  else:
+    return JsonResponse(bot.chat(user_input))
