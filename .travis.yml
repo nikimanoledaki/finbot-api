@@ -1,4 +1,4 @@
 language: python
 python:
-- '3.7.6'
+- '3.6.10'
 script: ./backend/manage.py test

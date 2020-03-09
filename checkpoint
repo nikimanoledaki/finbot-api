@@ -1,2 +1,2 @@
-model_checkpoint_path: "/Users/meghanmccue/projects/django-api/finbot-api/model.tflearn"
-all_model_checkpoint_paths: "/Users/meghanmccue/projects/django-api/finbot-api/model.tflearn"
+model_checkpoint_path: "/Users/student/Projects/week_final_project/finbot-api/model.tflearn"
+all_model_checkpoint_paths: "/Users/student/Projects/week_final_project/finbot-api/model.tflearn"
