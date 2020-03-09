@@ -1,36 +1,155 @@
 {"intents": [
-  {"tag": "savings",
-    "patterns": ["saving", "savings", "What should I save?", "How much should I save?"],
-    "responses": [{
-      "Google": "http://www.google.com",
-      "Facebook": "http://www.facebook.com"
-    }],
-    "context_set": ""
-   },
    {"tag": "budgeting",
     "patterns": ["budget", "budgeting", "What is a budget?", "How do I budget?"],
-    "responses": [""],
+    "responses": [{
+      "Beginners guide to managing your money": "https://www.moneyadviceservice.org.uk/en/articles/beginners-guide-to-managing-your-money",
+      "Planning a budget": "https://www.which.co.uk/money/money-saving-tips/budgeting/planning-a-budget/how-to-plan-an-effective-budget-anw359u2lct8",
+      "Work out your budget": "https://www.citizensadvice.org.uk/debt-and-money/budgeting/budgeting/work-out-your-budget/"
+    }],
     "context_set": ""
    },
    {"tag": "ISAs",
     "patterns": ["ISA", "ISAs", "What is an ISA?"],
-    "responses": [""],
+    "responses": [{
+      "What is an ISA": "https://www.which.co.uk/money/savings-and-isas/isas/cash-isas/what-is-an-isa-agw6n0r0d11h",
+      "ISA Guide": "https://www.moneysavingexpert.com/savings/ISA-guide-savings-without-tax/",
+      "Best ISAs for Beginners": "https://www.hl.co.uk/investment-services/isa/isa-individual-savings-accounts-explained"
+    }],
     "context_set": ""
    },
    {"tag": "diversification",
     "patterns": ["diversification", "What is diversification?"],
-    "responses": [""],
+    "responses": [{
+      "What is Diversification?": "https://www.investopedia.com/terms/d/diversification.asp",
+      "Impostance of Diversification": "https://www.investopedia.com/investing/importance-diversification/",
+      "Portfolio Diversification": "https://corporatefinanceinstitute.com/resources/knowledge/strategy/diversification/"
+    }],
     "context_set": ""
    },
    {"tag": "salary negotiation",
     "patterns": ["salary negotiation", "negotiation", "negotiate salary", "job offer negotiation"],
-    "responses": [""],
+    "responses": [{
+      "Salary Negotiation 101": "https://www.glassdoor.co.uk/blog/guide/how-to-negotiate-your-salary/",
+      "Indeed Career Guide": "https://www.indeed.com/career-advice/pay-salary/how-to-negotiate-salary",
+      "10 things not to say when negotiation salary": "https://www.forbes.com/sites/lizryan/2018/02/11/ten-things-never-ever-to-say-in-a-salary-negotiation/"
+    }],
     "context_set": ""
    },
    {"tag": "student loans",
     "patterns": ["student loan", "student loans", "How do I pay off my student loans?", "student debt"],
-    "responses": [""],
+    "responses": [{
+      "UK Government's Guide to Student Finance": "https://www.gov.uk/student-finance",
+      "Repaying Your Student Loan": "https://www.gov.uk/repaying-your-student-loan",
+      "Student finance: What you need to know": "https://www.moneyadviceservice.org.uk/en/articles/student-finance"
+    }],
     "context_set": ""
+   },
+   {"tag": "fiduciary",
+    "patterns": ["fiduciary", "what is a fiduciary?", "fiduciary duties"],
+    "responses": [{
+      "What Is a Fiduciary?": "https://www.investopedia.com/terms/f/fiduciary.asp",
+      "The importance of Fiduciary Duty": "https://www.unpri.org/fiduciary-duty/what-is-fiduciary-duty-and-why-is-it-important/247.article",
+      "Fiduciary Management": "https://www.pwc.co.uk/pensions/fiduciary-management.html"
+    }],
+    "context_set": ""
+   },
+   {"tag": "investing",
+    "patterns": ["investing", "investment", "allocating funds", "what is investing?", "what is investment"],
+    "responses": [{
+      "How to Start Investing": "https://www.investopedia.com/articles/basics/06/invest1000.asp",
+      "Investing for beginners": "https://www.moneysavingexpert.com/savings/investment-beginners/",
+      "Financial Times: list of investments": "https://www.ft.com/personal-finance/investments"
+    }],
+    "context_set": ""
+   },
+   {"tag": "expenses",
+    "patterns": ["expenses", "expense", "what is an expense?", "what is expenses?"],
+    "responses": [{
+      "What is an Expense?": "https://www.investopedia.com/terms/e/expense.asp",
+      "Examples of Expenses": "https://www.accountingcoach.com/blog/what-is-an-expense",
+      "6 step introduction to managing your day-to-day expenses": "https://www.freeagent.com/guides/expenses/introduction-to-expenses/"
+    }],
+    "context_set": ""
+   },
+   {"tag": "income",
+    "patterns": ["income", "managing income", "what is income?"],
+    "responses": [{
+      "Beginers Guide to managing your money": "https://www.moneyadviceservice.org.uk/en/articles/beginners-guide-to-managing-your-money",
+      "Spending Your Income": "https://www.hsbc.co.uk/guides/managing-money/spending-your-income/",
+      "Ways to be better with money": "https://www.thebalance.com/ways-to-be-better-with-money-960664"
+    }],
+    "context_set": ""
+   },
+   {"tag": "financial risk",
+    "patterns": ["risk", "financial risk", "risk management", "What is risk?", "What is financial risk?"],
+    "responses": [{
+        "What is financial risk?": "https://www.investopedia.com/terms/f/financialrisk.asp", 
+        "Types of financial risk": "https://www.simplilearn.com/financial-risk-and-types-rar131-article", 
+        "Defining financial risk": "https://www.icaew.com/technical/business-and-management/risk-management/defining-financial-risk"
+      }],
+    "context_set": ""
+   },
+   {"tag": "loans",
+   "patterns": ["loans", "borrowing", "personal loans", "business loans", "What is a loan?", "How do I get a loan?", "What type of loan could I get?", "What types of loan are there?"],
+   "responses": [{
+       "Defining Loans": "https://www.investopedia.com/terms/l/loan.asp", 
+       "Types of Borrowing": "https://www.citizensadvice.org.uk/debt-and-money/borrowing-money/types-of-borrowing/",
+       "Guide to loans": "https://www.uswitch.com/loans/loans-guide/"
+     }],
+   "context_set": ""
+   },
+   {"tag": "mortage",
+   "patterns": ["mortgage", "homeowner's loan", "deed", "What is a mortgage?", "What is a homeowner's loan?", "How much deposit do I need for a mortgage?"],
+   "responses": [{
+       "Mortgages explained for first-time buyers": "https://www.bbc.co.uk/news/business-21062675", 
+       "How to apply for a mortgage": "https://www.moneyadviceservice.org.uk/en/articles/how-to-apply-for-a-mortgage", 
+       "A complete guide to mortgages": "https://www.money.co.uk/mortgages/a-complete-guide-to-mortgages.htm"
+     }],
+   "context_set": ""
+   },
+   {"tag": "insurance",
+    "patterns": ["insurance", "health insurance", "life insurance", "disability insurance", "liability insurance", "pet insurance", "What types of insurance are there", "How do I get insurance?"],
+    "responses": [{
+        "What is insurance": "https://www.investopedia.com/terms/i/insurance.asp",
+        "Types of insurance": "https://www.citizensadvice.org.uk/consumer/insurance/insurance/types-of-insurance/",
+        "Insurance - help and guidance": "https://www.moneyadviceservice.org.uk/en/categories/insurance"
+      }],
+    "context_set": ""
+   },
+   {"tag": "retirement planning",
+    "patterns": ["retirement planning", "retirement plans", "retirement", "saving for retirement", "What is retirement planning?", "What is a retirement plan?", "Why should I have a retirement plan?", "Why plan for retirement?"],
+    "responses": [{
+        "Retirement Planning": "https://www.investopedia.com/terms/r/retirement-planning.asp",
+        "Retirement Income": "https://www.gov.uk/plan-retirement-income",
+        "Personal Pension Plans": "https://www.money.co.uk/pensions/personal-pension-plans.htm",
+      }],
+    "context_set": ""
+   },
+   {"tag": "income tax",
+    "patterns": ["income tax", "income taxes", "income taxation", "taxable income", "What is income tax?", "How much income tax should I pay?"],
+    "responses": [{ 
+        "Income Tax": "https://www.gov.uk/income-tax",
+        "How much income tax should you pay": "https://www.citizensadvice.org.uk/debt-and-money/tax/income-tax-how-much-should-you-pay/income-tax/",
+        "Tax and National Insurance Deductions": "https://www.moneyadviceservice.org.uk/en/articles/tax-and-national-insurance-deductions"
+      }],
+    "context_set": ""
+   },
+   {"tag": "balance sheet",
+   "patterns": ["balance sheet", "asset sheet", "financial statement", "liabilities", "What is a balance sheet?"],
+   "responses": [{
+       "Balance sheets explained": "https://www.investopedia.com/terms/b/balancesheet.asp",
+       "Reading the balance sheet": "https://www.investopedia.com/articles/04/031004.asp"
+     }],
+   "context_set": ""
+   },
+   {"tag": "savings",
+   "patterns": ["saving", "savings", "What should I save?", "How much should I save?"],
+   "responses": [{
+       "Saving and investing": "https://www.moneyadviceservice.org.uk/en/categories/saving-and-investing", 
+       "Tips for choosing a savings account": "https://www.moneyadviceservice.org.uk/en/articles/top-tips-for-choosing-savings-accounts",
+       "How to save money": "https://www.moneyadviceservice.org.uk/en/categories/how-to-save-money"
+     }],
+   "context_set": ""
    }
-]
+  ]
 }
