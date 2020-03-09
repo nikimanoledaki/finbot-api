@@ -101,20 +101,18 @@ def chat(user_input):
 
   previous_user_input = list(UserInput.objects.all())[-2].text
 
+
   ERROR_THRESHOLD = 0.7
     
   results = model.predict([bag_of_wrds(user_input, words)])[0]
   results_index = numpy.argmax(results)
   tag = labels[results_index]
 
-
   if results[results_index] > ERROR_THRESHOLD:
     for tg in data['intents']:
       if tg['tag'] == 'yes':
         return showLinks(previous_user_input)
       elif tg['tag'] == tag:
-        print('inside tag==tag')
-        print(tg['tag'])
         responses = tg['responses']
         if tg['tag'] in FINANCE_INTENTS:
           return responses[0]
