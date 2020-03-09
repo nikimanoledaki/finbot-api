@@ -93,6 +93,7 @@ def bag_of_wrds(s, words):
   return numpy.array(bag)
 
 def chat(user_input):
+  print(user_input)
 
   ERROR_THRESHOLD = 0.7
     
@@ -100,11 +101,15 @@ def chat(user_input):
   results_index = numpy.argmax(results)
   tag = labels[results_index]
 
+  
+
   print(results[results_index])
+  print(results)
 
   if results[results_index] > ERROR_THRESHOLD:
     for tg in data['intents']:
       if tg['tag'] == tag:
+        print(tg['tag'])
         responses = tg['responses']
 
     return random.choice(responses)

@@ -9,4 +9,6 @@ def index(request):
   return HttpResponse(output)
 
 def predict(user_input):
+  print(bot.chat(user_input))
   return bot.chat(user_input)
+
