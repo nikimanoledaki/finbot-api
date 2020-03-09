@@ -1,22 +1,22 @@
 {"intents": [
   {"tag": "savings",
     "patterns": ["saving", "savings", "What should I save?", "How much should I save?"],
-    "responses": ["Do you want more info?", "www.google.com"],
+    "responses": ["www.google.com"],
     "context_set": ""
    },
    {"tag": "budgeting",
     "patterns": ["budget", "budgeting", "What is a budget?", "How do I budget?"],
-    "responses": ["A budget is essential to living within your means and saving enough to meet your long-term goals. The 50/30/20 budgeting method offers a great framework. It breaks down like this: 50% of your take-home pay or net income (after taxes, that is) goes toward living essentials, such as rent, utilities, groceries, and transport. 30% is allocated to lifestyle expenses, such as dining out and shopping for clothes. 20% goes towards the future: paying down debt and saving both for retirement and for emergencies"],
+    "responses": [""],
     "context_set": ""
    },
    {"tag": "ISAs",
     "patterns": ["ISA", "ISAs", "What is an ISA?"],
-    "responses": ["An individual savings account (ISA) is a class of retail investment arrangement available to residents of the United Kingdom."],
+    "responses": [""],
     "context_set": ""
    },
    {"tag": "diversification",
     "patterns": ["diversification", "What is diversification?"],
-    "responses": ["Diversification is the process of allocating capital in a way that reduces the exposure to any one particular asset or risk. A common path towards diversification is to reduce risk or volatility by investing in a variety of assets."],
+    "responses": [""],
     "context_set": ""
    },
    {"tag": "salary negotiation",

@@ -16,7 +16,7 @@
    },
   {"tag": "savings",
     "patterns": ["saving", "savings", "What should I save?", "How much should I save?"],
-    "responses": ["Do you want more information?", "www.google.com"],
+    "responses": ["Do you want more information?"],
     "context_set": ""
    },
    {"tag": "budgeting",

@@ -17,6 +17,9 @@ file_path = os.path.join(module_dir, 'intents.json')
 with open(file_path) as file:
   data = json.load(file)
 
+links_file_path = os.path.join(module_dir, 'intentsLinks.json')
+with open(links_file_path) as file:
+  linksData = json.load(file)
 
 words = []
 labels = []
@@ -107,10 +110,10 @@ def chat(user_input):
     results = model.predict([bag_of_wrds(previous_user_input, words)])[0]
     results_index = numpy.argmax(results)
     tag = labels[results_index]
-    for tg in data['intents']:
+    for tg in linksData['intents']:
       if tg['tag'] == tag:
         responses = tg['responses']
-    return responses[1]
+    return random.choice(responses)
 
   elif results[results_index] > ERROR_THRESHOLD:
     for tg in data['intents']:
