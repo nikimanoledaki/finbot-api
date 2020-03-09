@@ -125,4 +125,4 @@ coverage = "*"
 tensorflow = "==1.13.1"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"
