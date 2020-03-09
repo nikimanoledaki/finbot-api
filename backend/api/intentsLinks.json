@@ -1,32 +1,83 @@
 {"intents": [
-  {"tag": "savings",
-    "patterns": ["saving", "savings", "What should I save?", "How much should I save?"],
-    "responses": ["www.google.com"],
-    "context_set": ""
-   },
    {"tag": "budgeting",
     "patterns": ["budget", "budgeting", "What is a budget?", "How do I budget?"],
-    "responses": [""],
+    "responses": [{
+      "Beginners guide to managing your money": "https://www.moneyadviceservice.org.uk/en/articles/beginners-guide-to-managing-your-money",
+      "Planning a budget": "https://www.which.co.uk/money/money-saving-tips/budgeting/planning-a-budget/how-to-plan-an-effective-budget-anw359u2lct8",
+      "Work out your budget": "https://www.citizensadvice.org.uk/debt-and-money/budgeting/budgeting/work-out-your-budget/"
+    }],
     "context_set": ""
    },
    {"tag": "ISAs",
     "patterns": ["ISA", "ISAs", "What is an ISA?"],
-    "responses": [""],
+    "responses": [{
+      "What is an ISA": "https://www.which.co.uk/money/savings-and-isas/isas/cash-isas/what-is-an-isa-agw6n0r0d11h",
+      "ISA Guide": "https://www.moneysavingexpert.com/savings/ISA-guide-savings-without-tax/",
+      "Best ISAs for Beginners": "https://www.hl.co.uk/investment-services/isa/isa-individual-savings-accounts-explained"
+    }],
     "context_set": ""
    },
    {"tag": "diversification",
     "patterns": ["diversification", "What is diversification?"],
-    "responses": [""],
+    "responses": [{
+      "What is Diversification?": "https://www.investopedia.com/terms/d/diversification.asp",
+      "Impostance of Diversification": "https://www.investopedia.com/investing/importance-diversification/",
+      "Portfolio Diversification": "https://corporatefinanceinstitute.com/resources/knowledge/strategy/diversification/"
+    }],
     "context_set": ""
    },
    {"tag": "salary negotiation",
     "patterns": ["salary negotiation", "negotiation", "negotiate salary", "job offer negotiation"],
-    "responses": [""],
+    "responses": [{
+      "Salary Negotiation 101": "https://www.glassdoor.co.uk/blog/guide/how-to-negotiate-your-salary/",
+      "Indeed Career Guide": "https://www.indeed.com/career-advice/pay-salary/how-to-negotiate-salary",
+      "10 things not to say when negotiation salary": "https://www.forbes.com/sites/lizryan/2018/02/11/ten-things-never-ever-to-say-in-a-salary-negotiation/"
+    }],
     "context_set": ""
    },
    {"tag": "student loans",
     "patterns": ["student loan", "student loans", "How do I pay off my student loans?", "student debt"],
-    "responses": [""],
+    "responses": [{
+      "UK Government's Guide to Student Finance": "https://www.gov.uk/student-finance",
+      "Repaying Your Student Loan": "https://www.gov.uk/repaying-your-student-loan",
+      "Student finance: What you need to know": "https://www.moneyadviceservice.org.uk/en/articles/student-finance"
+    }],
+    "context_set": ""
+   },
+   {"tag": "fiduciary",
+    "patterns": ["fiduciary", "what is a fiduciary?", "fiduciary duties"],
+    "responses": [{
+      "What Is a Fiduciary?": "https://www.investopedia.com/terms/f/fiduciary.asp",
+      "The importance of Fiduciary Duty": "https://www.unpri.org/fiduciary-duty/what-is-fiduciary-duty-and-why-is-it-important/247.article",
+      "Fiduciary Management": "https://www.pwc.co.uk/pensions/fiduciary-management.html"
+    }],
+    "context_set": ""
+   },
+   {"tag": "investing",
+    "patterns": ["investing", "investment", "allocating funds", "what is investing?", "what is investment"],
+    "responses": [{
+      "How to Start Investing": "https://www.investopedia.com/articles/basics/06/invest1000.asp",
+      "Investing for beginners": "https://www.moneysavingexpert.com/savings/investment-beginners/",
+      "Financial Times: list of investments": "https://www.ft.com/personal-finance/investments"
+    }],
+    "context_set": ""
+   },
+   {"tag": "expenses",
+    "patterns": ["expenses", "expense", "what is an expense?", "what is expenses?"],
+    "responses": [{
+      "What is an Expense?": "https://www.investopedia.com/terms/e/expense.asp",
+      "Examples of Expenses": "https://www.accountingcoach.com/blog/what-is-an-expense",
+      "6 step introduction to managing your day-to-day expenses": "https://www.freeagent.com/guides/expenses/introduction-to-expenses/"
+    }],
+    "context_set": ""
+   },
+   {"tag": "income",
+    "patterns": ["income", "managing income", "what is income?"],
+    "responses": [{
+      "Beginers Guide to managing your money": "https://www.moneyadviceservice.org.uk/en/articles/beginners-guide-to-managing-your-money",
+      "Spending Your Income": "https://www.hsbc.co.uk/guides/managing-money/spending-your-income/",
+      "Ways to be better with money": "https://www.thebalance.com/ways-to-be-better-with-money-960664"
+    }],
     "context_set": ""
    },
    {"tag": "financial risk",
