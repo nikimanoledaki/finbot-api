@@ -1,0 +1,36 @@
+{"intents": [
+  {"tag": "savings",
+    "patterns": ["saving", "savings", "What should I save?", "How much should I save?"],
+    "responses": [{
+      "Google": "http://www.google.com",
+      "Facebook": "http://www.facebook.com"
+    }],
+    "context_set": ""
+   },
+   {"tag": "budgeting",
+    "patterns": ["budget", "budgeting", "What is a budget?", "How do I budget?"],
+    "responses": [""],
+    "context_set": ""
+   },
+   {"tag": "ISAs",
+    "patterns": ["ISA", "ISAs", "What is an ISA?"],
+    "responses": [""],
+    "context_set": ""
+   },
+   {"tag": "diversification",
+    "patterns": ["diversification", "What is diversification?"],
+    "responses": [""],
+    "context_set": ""
+   },
+   {"tag": "salary negotiation",
+    "patterns": ["salary negotiation", "negotiation", "negotiate salary", "job offer negotiation"],
+    "responses": [""],
+    "context_set": ""
+   },
+   {"tag": "student loans",
+    "patterns": ["student loan", "student loans", "How do I pay off my student loans?", "student debt"],
+    "responses": [""],
+    "context_set": ""
+   }
+]
+}
