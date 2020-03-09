@@ -49,6 +49,7 @@ jupyter==1.0.0
 jupyter-client==5.3.4
 jupyter-console==6.1.0
 jupyter-core==4.6.2
+Keras==2.3.1
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
 lazy-object-proxy==1.4.3
