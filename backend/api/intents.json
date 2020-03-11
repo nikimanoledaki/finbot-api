@@ -1,26 +1,35 @@
 {"intents": [
   {"tag": "greeting",
-   "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey"],
-   "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
-   "context_set": "goodbye"
+   "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey", "Howdy"],
+   "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "Howdy there partner!"],
+   "context_set": ""
   },
   {"tag": "goodbye",
    "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye"],
    "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
    "context_set": ""
   },
+  {"tag": "help",
+    "patterns": ["help", "I need help", "can you help me", "topics", "could you please give me topics", "what can I ask you about", "what else can you tell me", "other topics", "I don't know", "idk", "topics", "topics", "themes", "suggestions", "I have a question", "subjects", "what other subjects", "what do you know", "I don’t care", "that was not my question", "that’s not what I meant", "tell me something else", "next", "thanks"],
+    "responses": [{
+      "title": "Help",
+      "body": "Here is a list of topics you can ask me about:",
+      "list": ["budgeting", "ISAs"]
+      }],
+    "context_set": ""
+  },
   {"tag": "thanks",
-    "patterns": ["Thanks", "Thank you", "That's helpful"],
+    "patterns": ["Thanks", "Cool", "Nice", "Thank you", "Thanks a lot", "That's helpful", "That's helpful"],
     "responses": ["Happy to help!", "Anytime!", "My pleasure!"],
     "context_set": ""
    },
    {"tag": "budgeting",
-    "patterns": ["budget", "budgeting", "What is a budget?", "How do I budget?"],
+    "patterns": ["budget", "Tell me about budgeting", "budgeting", "What is a budget?", "How do I budget?"],
     "responses": ["A budget is essential to living within your means and saving enough to meet your long-term goals. The 50/30/20 budgeting method offers a great framework. It breaks down like this: 50% of your take-home pay or net income (after taxes, that is) goes toward living essentials, such as rent, utilities, groceries, and transport. 30% is allocated to lifestyle expenses, such as dining out and shopping for clothes. 20% goes towards the future: paying down debt and saving both for retirement and for emergencies"],
     "context_set": ""
    },
    {"tag": "ISAs",
-    "patterns": ["ISA", "ISAs", "What is an ISA?"],
+    "patterns": ["ISA", "Tell me about ISAs", "Individual savings account", "ISAs", "What is an ISA?"],
     "responses": ["An individual savings account (ISA) is a class of retail investment arrangement available to residents of the United Kingdom. It allows you to save tax-free into a cash savings or investment account. Isa accounts are offered by banks, building societies, insurers, asset managers and National Savings and Investments (NS&I)."],
     "context_set": ""
    },
@@ -30,7 +39,7 @@
     "context_set": ""
    },
    {"tag": "salary negotiation",
-    "patterns": ["salary negotiation", "negotiation", "negotiate salary", "job offer negotiation", "What is salary negotiation", "How do I negotiate my salary", "How do I ask my employer for more money"],
+    "patterns": ["salary negotiation", "negotiate", "raise", "ask for a raise", "negotiation", "negotiate salary", "job offer negotiation", "What is salary negotiation", "How do I negotiate my salary", "How do I ask my employer for more money"],
     "responses": ["Salary negotiations are discussions between yourself and a representative of your current or prospective company that aim to help you secure a higher salary."],
     "context_set": ""
    },
@@ -40,22 +49,22 @@
     "context_set": ""
    },
    {"tag": "fiduciary",
-    "patterns": ["fiduciary", "what is a fiduciary?", "fiduciary duties"],
+    "patterns": ["fiduciary", "shoudl I hire an accountant", "accountant", "what is a fiduciary?", "fiduciary duties"],
     "responses": ["A fiduciary is a person who holds a legal or ethical relationship of trust with one or more other parties. Typically, a fiduciary prudently takes care of money or other assets for another person"],
     "context_set": ""
    },
    {"tag": "investing",
-    "patterns": ["investing", "investment", "allocating funds", "what is investing?", "what is investment"],
+    "patterns": ["investing", "what should I invest in", "investment", "allocating funds", "what is investing?", "what is investment"],
     "responses": ["Investments are something you buy or put your money into to get a profitable return. Investing is a way to set aside money while you are busy with life and have that money work for you so that you can fully reap the rewards of your labor in the future"],
     "context_set": ""
    },
    {"tag": "expenses",
-    "patterns": ["expenses", "expense", "what is an expense?", "what is expenses?"],
+    "patterns": ["expenses", "expense", "what is an expense?", "I'm broke", "I spend too much money", "what is expenses?"],
     "responses": ["An expense is the cost of operations that a company incurs to generate revenue. As the popular saying goes, “it costs money to make money.” Common expenses include payments to suppliers, employee wages, factory leases, and equipment depreciation"],
     "context_set": ""
    },
    {"tag": "income",
-    "patterns": ["income", "managing income", "what is income?"],
+    "patterns": ["income", "managing income", "money", "what is income?"],
     "responses": ["Income is money (or some equivalent value) that an individual or business receives in exchange for providing a good or service or through investing capital. For individuals, income is most often received in the form of wages or salary. Business income can refer to a company's remaining revenues after paying all expenses and taxes."],
     "context_set": ""
    },
@@ -70,7 +79,7 @@
    "context_set": ""
    },
    {"tag": "mortage",
-   "patterns": ["mortgage", "homeowner's loan", "deed", "What is a mortgage?", "What is a homeowner's loan?", "How much deposit do I need for a mortgage?"],
+   "patterns": ["mortgage", "homeowner's loan", "deed", "I want to buy a house", "What is a mortgage?", "What is a homeowner's loan?", "How much deposit do I need for a mortgage?"],
    "responses": ["A mortgage is a loan in which property or real estate is used as collateral. The borrower enters into an agreement with the lender (usually a bank) wherein the borrower receives cash upfront then makes payments over a set time span until he pays back the lender in full."],
    "context_set": ""
    },
@@ -80,17 +89,17 @@
     "context_set": ""
    },
    {"tag": "retirement planning",
-    "patterns": ["retirement planning", "retirement plans", "retirement", "saving for retirement", "What is retirement planning?", "What is a retirement plan?", "Why should I have a retirement plan?", "Why plan for retirement?"],
+    "patterns": ["retirement planning", "retirement plans", "old age", "old age savings", "retirement", "saving for retirement", "What is retirement planning?", "What is a retirement plan?", "Why should I have a retirement plan?", "Why plan for retirement?"],
     "responses": ["Retirement planning is the process of determining retirement income goals and the actions and decisions necessary to achieve those goals. Retirement planning includes identifying sources of income, estimating expenses, implementing a savings program, and managing assets and risk. Future cash flows are estimated to determine if the retirement income goal will be achieved."],
     "context_set": ""
    },
    {"tag": "income tax",
-    "patterns": ["income tax", "income taxes", "income taxation", "taxable income", "What is income tax?", "How much income tax should I pay?"],
+    "patterns": ["income tax", "income taxes", "income taxation", "taxes", "tax", "taxable income", "What is income tax?", "How much income tax should I pay?"],
     "responses": ["Income Tax is a tax you pay on your income. You do not have to pay tax on all types of income."],
     "context_set": ""
    },
    {"tag": "balance sheet",
-   "patterns": ["balance sheet", "asset sheet", "financial statement", "liabilities", "What is a balance sheet?"],
+   "patterns": ["balance sheet", "asset sheet", "financial statement", "mange my money", "liabilities", "What is a balance sheet?"],
    "responses": ["A balance sheet is a financial statement that reports a company's assets, liabilities and shareholders' equity at a specific point in time, and provides a basis for computing rates of return and evaluating its capital structure."],
    "context_set": ""
    },
@@ -100,7 +109,7 @@
    "context_set": ""
    },
    {"tag": "yes",
-    "patterns": ["yes", "yes please", "y", "sure", "ok"],
+    "patterns": ["yes", "yes please", "yeah", "y", "sure", "ok", "okay", "k"],
     "responses": [""],
     "context_set": ""
    }
