@@ -1,61 +1,61 @@
 {"intents": [
   {"tag": "greeting",
-   "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey", "Howdy"],
-   "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "Howdy there partner!", "Hi 👋"],
-   "context_set": "goodbye"
+   "patterns": ["hi", "is anyone there?", "hello", "good day", "hey", "howdy", "sup"],
+   "responses": ["Hello! 🤖", "Good to see you again!", "Hi there, how can I help?", "Howdy there partner! 🤠", "Hi 👋"],
+   "context_set": ""
   },
   {"tag": "goodbye",
-   "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye"],
+   "patterns": ["cya", "see you later", "goodbye", "have a good day", "bye"],
    "responses": ["Sad to see you go 😢", "Talk to you later", "Goodbye!"],
    "context_set": ""
   },
   {"tag": "thanks",
-    "patterns": ["Thanks", "Cool", "Nice", "Thank you", "Thanks a lot", "That's helpful", "That's helpful"],
-    "responses": ["Happy to help!", "Anytime!", "My pleasure!"],
+    "patterns": ["thanks", "cool", "nice", "thank you", "thanks a lot", "helpful"],
+    "responses": ["Happy to help! 🤝", "Anytime!", "My pleasure!"],
     "context_set": ""
    },
-   {"tag": "help",
-    "patterns": ["help", "I need help", "can you help me", "topics", "could you please give me topics", "what can I ask you about", "what else can you tell me", "other topics", "I don't know", "idk", "topics", "topics", "themes", "suggestions", "I have a question", "subjects", "what other subjects", "what do you know", "I don’t care", "that was not my question", "that’s not what I meant", "tell me something else", "next", "thanks", "money"],
+   {"tag": "topics",
+    "patterns": ["topics", "money", "personal finances", "manage my finances", "other topics", "list topics"],
     "responses": [{
       "title": "Help", 
       "body": "Here is a list of topics you can ask me about:", 
-      "list": ["Related keywords:", "budgeting", "ISAs", "diversification", "salary negotiation", "student loans", "fiduciary", "investing", "expenses", "income", "financial risk", "loans", "mortgage", "insurance", "retirement planning", "income tax", "balance sheet", "savings"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
+    }],
+    "context_set": ""
+   },
+   {"tag": "help",
+    "patterns": ["help", "I need help", "help me", "can you help me"],
+    "responses": [{
+      "title": "Help", 
+      "body": "Here is a list of topics you can ask me about:", 
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
     }],
     "context_set": ""
    },
    {"tag": "budgeting",
-    "patterns": ["budget", "Tell me about budgeting", "budgeting", "What is a budget?", "How do I budget?"],
+    "patterns": ["budget", "budgeting", "what is a budget", "how do I budget"],
     "responses": [{
       "title": "Budget", 
       "body": "A budget is essential to living within your means and saving enough to meet your long-term 📆 goals. The 50/30/20 budgeting method offers a great framework. It breaks down like this: 50% of your take-home pay or net income (after taxes, that is) goes toward living essentials, such as 🏡rent, 🚰utilities, 🛒groceries, and 🚉transport. 30% is allocated to lifestyle expenses, such as dining out and shopping 🛍 for clothes. 20% goes towards the future: paying down debt and saving both for retirement and for 🚨 emergencies", 
-      "list": ["Related keywords:", "balance sheet", "fiduciary"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
    },
    {"tag": "ISAs",
-    "patterns": ["ISA", "Tell me about ISAs", "Individual savings account", "ISAs", "What is an ISA?"],
+    "patterns": ["ISA", "tell me about ISAs", "ISAs"],
     "responses": [{
       "title": "ISA", 
       "body": "An individual savings account (ISA) is a class of retail investment arrangement available to residents of the United Kingdom. It allows you to save tax-free into a cash savings or investment account. Isa accounts are offered by 🏦 banks, building societies, insurers, asset managers and National Savings and Investments (NS&I).", 
-      "list": ["Related keywords:", "balance sheet", "fiduciary"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
-  },
-  {"tag": "ISAs",
-    "patterns": ["ISA", "Tell me about ISAs", "Individual savings account", "ISAs", "What is an ISA?"],
-    "responses": [{
-      "title": "ISA",
-      "body": "An individual savings account (ISA) is a class of retail investment arrangement available to residents of the United Kingdom. It allows you to save tax-free into a cash savings or investment account. Isa accounts are offered by banks, building societies, insurers, asset managers and National Savings and Investments (NS&I).",
-      "list": ["Related keywords:", "balance sheet", "fiduciary"]
-      }],
-      "context_set": ""
   },
   {"tag": "diversification",
     "patterns": ["diversification", "What is diversification?"],
     "responses": [{
       "title": "Diversification", 
       "body": "📊 Diversification is the process of allocating capital in a way that reduces the exposure to any one particular asset or risk. A common path towards diversification is to reduce risk or volatility by investing in a variety of assets.", 
-      "list": ["Related keywords:", "investment", "fiduciary"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
    },
@@ -64,7 +64,7 @@
     "responses": [{
       "title": "Salary negotiation", 
       "body": "Salary negotiations are discussions between yourself and a representative of your current or prospective company 🏢 that aim to help you secure a higher salary 🔝.", 
-      "list": ["Related keywords:", "income", "fiduciary"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
   },
@@ -73,7 +73,7 @@
     "responses": [{
       "title": "Student loans", 
       "body": "You start repaying your 👩‍🎓 student loan once you earn over a certain amount. The size of your monthly 📆 repayments will depend on how much you earn, not what you owe. You’ll be charged interest on the loan from the day you take it out.", 
-      "list": ["Related keywords:", "income", "budgeting"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
    },
@@ -82,7 +82,7 @@
     "responses": [{
       "title": "Fiduciary", 
       "body": "A fiduciary is a person who holds a legal 👩‍⚖️ or ethical relationship of trust with one or more other parties. Typically, a fiduciary prudently takes care of money or other assets 🏦 for another person", 
-      "list": ["Related keywords:", "income", "budgeting"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
    },
@@ -91,103 +91,108 @@
     "responses": [{
       "title": "Investing", 
       "body": "Investments are something you buy or put your 💰 money into to get a profitable return. Investing is a way to set aside money while you are busy with life 🤪 and have that money work for you so that you can fully reap the rewards of your labor in the future 🔜", 
-      "list": ["Related keywords:", "income", "budgeting"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
    },
    {"tag": "expenses",
-    "patterns": ["expenses", "expense", "what is an expense?", "I'm broke", "I spend too much money", "what is expenses?"],
+    "patterns": ["expenses", "expense", "what is an expense?", "I'm broke", "I spend too much", "what is expenses?"],
     "responses": [{
       "title": "Expenses", 
       "body": "An expense is the cost 💸 of operations that a company incurs to generate revenue. As the popular saying goes, “it costs money to make money.” Common expenses include payments to suppliers, employee wages, factory leases, and equipment depreciation", 
-      "list": ["Related keywords:", "income", "budgeting"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
    },
    {"tag": "income",
-    "patterns": ["income", "managing income", "money", "what is income?"],
+    "patterns": ["income", "managing income", "what is income?"],
     "responses": [{
       "title": "Income", 
       "body": "Income is 💵 money (or some equivalent value) that an individual or business receives in exchange for providing a good or service or through investing capital. For individuals, income is most often received in the form of wages or salary 👩‍💻. Business income can refer to a company's remaining revenues after paying all expenses and taxes.", 
-      "list": ["Related keywords:", "income", "budgeting"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
    },
    {"tag": "financial risk",
-    "patterns": ["risk", "financial risk", "risk management", "What is risk?", "What is financial risk?"],
+    "patterns": ["risk", "financial risk", "risk", "What is risk?", "What is financial risk?"],
     "responses": [{
       "title": "Financial Risk", 
       "body": "Financial risk is a term that can apply to businesses, government entities, the financial market as a whole, and the individual.This risk is the danger or possibility that shareholders, investors, or other financial stakeholders will lose money.", 
-      "list": ["Related keywords:", "income", "budgeting"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
   },
   {"tag": "loans",
-   "patterns": ["loans", "borrowing", "personal loans", "business loans", "What is a loan?", "How do I get a loan?", "What type of loan could I get?", "What types of loan are there?"],
+   "patterns": ["loans", "borrowing", "loans", "business loans", "What is a loan?", "How do I get a loan?", "What type of loan could I get?", "What types of loan are there?"],
    "responses": [{
     "title": "Loans", 
     "body": "A loan is money, property, or other material goods given to another party in exchange for future repayment of the loan value or principal amount, along with interest or finance charges. A loan may be for a specific, one-time amount or can be available as an open-ended line of credit up to a specified limit or ceiling amount.", 
-    "list": ["Related keywords:", "income", "budgeting"]
+    "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
     }],
    "context_set": ""
    },
    {"tag": "mortage",
-   "patterns": ["mortgage", "homeowner's loan", "deed", "I want to buy a house", "What is a mortgage?", "What is a homeowner's loan?", "How much deposit do I need for a mortgage?"],
+   "patterns": ["mortgage", "homeowner's loan", "deed", "buy a house", "deposit"],
    "responses": [{
     "title": "Mortgage", 
     "body": "A mortgage is a loan in which property or real estate is used as collateral. The borrower enters into an agreement with the lender (usually a bank) wherein the borrower receives cash upfront then makes payments over a set time span until he pays back the lender in full.", 
-    "list": ["Related keywords:", "income", "budgeting"]
+    "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
     }],
    "context_set": ""
   },
   {"tag": "insurance",
-    "patterns": ["insurance", "health insurance", "life insurance", "disability insurance", "liability insurance", "pet insurance", "What types of insurance are there", "How do I get insurance?"],
+    "patterns": ["insurance", "health insurance", "life insurance", "disability insurance", "liability insurance", "pet insurance", "insured"],
     "responses": [{
       "title": "Insurance",
       "body": "Insurance is a contract, represented by a policy, in which an individual or entity receives financial protection or reimbursement against losses from an insurance company.",
-      "list": ["Related keywords:", "income", "budgeting"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
     }],
     "context_set": ""
    },
    {"tag": "retirement planning",
-    "patterns": ["retirement planning", "retirement plans", "old age", "old age savings", "retirement", "saving for retirement", "What is retirement planning?", "What is a retirement plan?", "Why should I have a retirement plan?", "Why plan for retirement?"],
+    "patterns": ["retirement planning", "retirement plans", "old age", "retirement", "saving for retirement"],
     "responses": [{
       "title": "Retirement Planning", 
       "body": "Retirement planning is the process of determining retirement income goals and the actions and decisions necessary to achieve those goals. Retirement planning includes identifying sources of income, estimating expenses, implementing a savings program, and managing assets and risk. Future cash flows are estimated to determine if the retirement income goal will be achieved.", 
-      "list": ["Related keywords:", "income", "budgeting"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
     }],
     "context_set": ""
    },
    {"tag": "income tax",
-    "patterns": ["income tax", "income taxes", "income taxation", "taxes", "tax", "taxable income", "What is income tax?", "How much income tax should I pay?"],
+    "patterns": ["income tax", "income taxes", "income taxation", "taxes", "tax", "taxable income"],
     "responses": [{
       "title": "Income Tax",
       "body": "Income Tax is a tax you pay on your income. You do not have to pay tax on all types of income.",
-      "list": ["Related keywords:", "income", "budgeting"]
+      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
     }],
     "context_set": ""
    },
    {"tag": "balance sheet",
-   "patterns": ["balance sheet", "asset sheet", "financial statement", "mange my money", "liabilities", "What is a balance sheet?"],
+   "patterns": ["balance sheet", "asset sheet", "financial statement", "mange my money", "liabilities"],
    "responses": [{
      "title": "Balance Sheet",
      "body": "A balance sheet is a financial statement that reports a company's assets, liabilities and shareholders' equity at a specific point in time, and provides a basis for computing rates of return and evaluating its capital structure.",
-     "list": ["Related keywords:", "income", "budgeting"]
+     "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
    }],
    "context_set": ""
    },
    {"tag": "savings",
-   "patterns": ["saving", "savings", "What should I save?", "How much should I save?"],
+   "patterns": ["saving", "savings", "save", "should I save?"],
    "responses": [{
      "title": "Savings",
      "body": "Savings refer to money you put aside for future use rather than spending it immediately. In addition to the benefits of saving up for future purchases, delaying an impulse purchase also helps you decide whether it is something you really need, or a waste of money you will regret shortly after buying.",
-     "list": ["Related keywords:", "income", "budgeting"]
+     "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
    }],
    "context_set": ""
    },
    {"tag": "yes",
-    "patterns": ["yes", "yes please", "y", "sure", "ok"],
+    "patterns": ["yes", "yes please", "yeah", "ye", "ya", "y", "sure", "ok", "okay"],
     "responses": [""],
+    "context_set": ""
+   },
+   {"tag": "love", 
+    "patterns": ["I love you", "love you"],
+    "responses": ["I love spending time with you too. 🤖"],
     "context_set": ""
    }
   ]
