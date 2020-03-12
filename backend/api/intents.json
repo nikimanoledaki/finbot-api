@@ -40,8 +40,17 @@
       "list": ["Related keywords:", "balance sheet", "fiduciary"]
       }],
     "context_set": ""
-   },
-   {"tag": "diversification",
+  },
+  {"tag": "ISAs",
+    "patterns": ["ISA", "Tell me about ISAs", "Individual savings account", "ISAs", "What is an ISA?"],
+    "responses": [{
+      "title": "ISA",
+      "body": "An individual savings account (ISA) is a class of retail investment arrangement available to residents of the United Kingdom. It allows you to save tax-free into a cash savings or investment account. Isa accounts are offered by banks, building societies, insurers, asset managers and National Savings and Investments (NS&I).",
+      "list": ["Related keywords:", "balance sheet", "fiduciary"]
+      }],
+      "context_set": ""
+  },
+  {"tag": "diversification",
     "patterns": ["diversification", "What is diversification?"],
     "responses": [{
       "title": "Diversification", 
@@ -58,8 +67,8 @@
       "list": ["Related keywords:", "income", "fiduciary"]
       }],
     "context_set": ""
-   },
-   {"tag": "student loans",
+  },
+  {"tag": "student loans",
     "patterns": ["student loan", "student loans", "How do I pay off my student loans?", "student debt", "What is student debt"],
     "responses": [{
       "title": "Student loans", 
@@ -112,8 +121,8 @@
       "list": ["Related keywords:", "income", "budgeting"]
       }],
     "context_set": ""
-   },
-   {"tag": "loans",
+  },
+  {"tag": "loans",
    "patterns": ["loans", "borrowing", "personal loans", "business loans", "What is a loan?", "How do I get a loan?", "What type of loan could I get?", "What types of loan are there?"],
    "responses": [{
     "title": "Loans", 
@@ -130,8 +139,8 @@
     "list": ["Related keywords:", "income", "budgeting"]
     }],
    "context_set": ""
-   },
-   {"tag": "insurance",
+  },
+  {"tag": "insurance",
     "patterns": ["insurance", "health insurance", "life insurance", "disability insurance", "liability insurance", "pet insurance", "What types of insurance are there", "How do I get insurance?"],
     "responses": [{
       "title": "Insurance",
