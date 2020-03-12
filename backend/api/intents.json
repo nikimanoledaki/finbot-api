@@ -21,7 +21,7 @@
    },
    {"tag": "name",
     "patterns": ["what is your name", "what should I call you", "whats your name?", "who are you", "you are?"],
-    "responses": ["You can call me Ub.", "I'm Ub, You're personal roboeducator", "Nice to meet you, I'm Ub"],
+    "responses": ["You can call me Ub.", "I'm Ub, You're personal roboeducator", "Nice to meet you, I'm Ub", "It's not your powers of observation I doubt, but merely the paradoxical nature of asking a masked man who is. But tell me, how can I help?", "Who? Who is but a form following the function of what"],
     "context_set": ""
    },
    {"tag": "creator",
