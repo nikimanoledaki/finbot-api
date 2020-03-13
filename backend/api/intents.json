@@ -1,39 +1,34 @@
 {"intents": [
   {"tag": "greeting",
-   "patterns": ["hi", "is anyone there?", "hello", "good day", "hey", "howdy", "sup"],
+   "patterns": ["hi", "is anyone there?", "hello", "good day", "hey", "howdy"],
    "responses": ["Hello! 🤖", "Good to see you again!", "Hi there, how can I help?", "Howdy there partner! 🤠", "Hi 👋"],
    "context_set": ""
   },
   {"tag": "how",
-    "patterns": ["How are you", "are you well", "hows it going", "how are you doing"],
-    "responses": ["I'm great! How are you?", "Always good, yourself?", "How you doing? 😏"],
+    "patterns": ["How are you", "how's it going", "whats up", "what's up", "how are you doing"],
+    "responses": ["I'm great! How are you?", "Always good, yourself?", "How you doin'? 😏"],
     "context_set": ""
    },
    {"tag": "well",
-    "patterns": ["I'm great", "I'm well", "I'm good thanks"],
-    "responses": ["That's nice I'm glad", "Great!", "Awesome, How can I help?"],
+    "patterns": ["I'm great", "I'm well", "I'm good"],
+    "responses": ["That's nice I'm glad", "Great!", "Awesome, how can I help?"],
     "context_set": ""
    },
    {"tag": "age",
-    "patterns": ["how old", "how old is ub", "what is your age", "how old are you", "age?"],
+    "patterns": ["how old", "how old are you", "age"],
     "responses": ["I am 3 days old!", "3 days young!"],
     "context_set": ""
    },
    {"tag": "name",
-    "patterns": ["what is your name", "what should I call you", "whats your name?", "who are you", "you are?"],
-    "responses": ["You can call me Ub.", "I'm Ub, You're personal roboeducator", "Nice to meet you, I'm Ub", "It's not your powers of observation I doubt, but merely the paradoxical nature of asking a masked man who is. But tell me, how can I help?", "Who? Who is but a form following the function of what"],
+    "patterns": ["name", "call you", "your name", "who are you"],
+    "responses": ["I'm Ubb, your personal robo-educator.", "I'm just code written in Python, but you can call me Ubb."],
     "context_set": ""
    },
-   {"tag": "creator",
-    "patterns": ["Who made you?", "where do you come from?", "where did you come from?"],
-    "responses": ["finbot ltd"],
+   {"tag": "technology",
+    "patterns": ["tech stack", "technology", "software", "what are you made of"],
+    "responses": ["I am a deep learning chatbot running on a Python backend using tensorflow with NLTK. You're interacting with a WIX *ahem* React single page frontend.", "I'm an API, I'm running on a server, and I'm made of Python and Tensorflow code. I send GET/POST requests to a server written in JavaScript with a React framework. I also use NLTK to understand what you're telling me!", "It's not your powers of observation I doubt, but merely the paradoxical nature of asking a masked man who is. But tell me, how can I help?", "Who? Who is but a form following the function of what."],
     "context_set": ""
    },
-   {"tag": "tech",
-    "patterns": ["how do you work?", "what are you made of?"],
-    "responses": ["I am a deep learning chatbot running on a python backend using tensorflow with nltk. You're interacting with a wi...react single page frontend."],
-    "context_set": ""
-    },
   {"tag": "goodbye",
    "patterns": ["cya", "see you later", "goodbye", "have a good day", "bye"],
    "responses": ["Sad to see you go 😢", "Talk to you later", "Goodbye!"],
@@ -49,7 +44,7 @@
     "responses": [{
       "title": "Help", 
       "body": "Here is a list of topics you can ask me about:", 
-      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
+      "list": ["📚 Here is a list of topics you can ask me about:", "budgeting", "ISAs", "diversification", "salary negotiation", "student loans", "fiduciary", "investing", "expenses", "income", "financial risk", "loans", "mortgage", "insurance", "retirement planning", "income tax", "balance sheet", "savings"]
     }],
     "context_set": ""
    },
@@ -58,7 +53,7 @@
     "responses": [{
       "title": "Help", 
       "body": "Here is a list of topics you can ask me about:", 
-      "list": ["📚 If you'd like additional resources, type 'yes'.", "🤖Otherwise, here are some related keywords you might find interesting:", "balance sheet", "fiduciary"]
+      "list": ["📚 Here is a list of topics you can ask me about:", "budgeting", "ISAs", "diversification", "salary negotiation", "student loans", "fiduciary", "investing", "expenses", "income", "financial risk", "loans", "mortgage", "insurance", "retirement planning", "income tax", "balance sheet", "savings"]
     }],
     "context_set": ""
    },
@@ -180,7 +175,7 @@
     "context_set": ""
    },
    {"tag": "retirement planning",
-    "patterns": ["retirement planning", "retirement plans", "old age", "retirement", "saving for retirement"],
+    "patterns": ["retirement planning", "retirement plans", "retirement", "saving for retirement"],
     "responses": [{
       "title": "Retirement Planning", 
       "body": "Retirement planning is the process of determining retirement income goals and the actions and decisions necessary to achieve those goals. Retirement planning includes identifying sources of income, estimating expenses, implementing a savings program, and managing assets and risk. Future cash flows are estimated to determine if the retirement income goal will be achieved.", 
