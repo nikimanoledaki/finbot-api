@@ -69,7 +69,7 @@ for x, doc in enumerate(docs_x):
   output.append(output_row)
 
 training = numpy.array(training)
-output = numpy.array(output)
+output = numpy.array(output) 
 
 with open('data.pickle', 'wb') as f:
   pickle.dump((words, labels, training, output), f)
@@ -83,7 +83,7 @@ net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, len(output[0]), activation='softmax')
 net = tflearn.regression(net)
 
-model = tflearn.DNN(net)
+model = tflearn.DNN(net) 
 
 # try:
 #   model.load('model.tflearn')
@@ -105,8 +105,6 @@ def bag_of_wrds(s, words):
   return numpy.array(bag)
 
 def chat(user_input):
-  FINANCE_INTENTS = ["savings", "budgeting"]
-
   previous_user_input = list(UserInput.objects.all())[-2].text
 
   ERROR_THRESHOLD = 0.7
@@ -115,19 +113,13 @@ def chat(user_input):
   results_index = numpy.argmax(results)
   tag = labels[results_index]
 
-
   if results[results_index] > ERROR_THRESHOLD:
     for tg in data['intents']:
       if tg['tag'] == 'yes':
         return showLinks(previous_user_input)
       elif tg['tag'] == tag:
-        print('inside tag==tag')
-        print(tg['tag'])
         responses = tg['responses']
-        if tg['tag'] in FINANCE_INTENTS:
-          return responses[0]
-        else:
-          return random.choice(responses)
+        return random.choice(responses)
   else:
     return "Sorry, I didn't catch what you said. 🤔 Could you please rephrase that?"
 
