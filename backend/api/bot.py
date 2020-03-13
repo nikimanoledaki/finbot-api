@@ -83,7 +83,7 @@ net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, len(output[0]), activation='softmax')
 net = tflearn.regression(net)
 
-model = tflearn.DNN(net)
+model = tflearn.DNN(net) 
 
 # try:
 #   model.load('model.tflearn')
