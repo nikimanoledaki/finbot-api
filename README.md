@@ -36,12 +36,23 @@ API: https://finbot--api.herokuapp.com/
 - Install Django
 - Install NLTK
 
-### 2. Install all other dependencies
+### 2. Start a python environment
+Install pipenv if you don't have it already.
+```
+brew install pipenv 
+```
+
+Then start a local virutal environemnt with pipen shell. This virutal environment automatically detects and runs the latest python version available on your local machine.
+```
+$ pipenv shell
+```
+
+### 3. Install all other dependencies
 
 After cloning the repo, run:
 
 ```
-$ pip3 install
+$ pipenv install
 ```
 
 ## Running the program
@@ -49,7 +60,7 @@ $ pip3 install
 ### Start Server
 
 ```
-$ python3 manage.py runserver
+$ python manage.py runserver
 ```
 
 ## Built With
